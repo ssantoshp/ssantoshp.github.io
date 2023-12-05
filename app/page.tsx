@@ -6,7 +6,7 @@ import Grid from '../src/components/Grid';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen overflow-y-scroll">
+    <main className="flex flex-col h-screen">
 
       <Image
           src="/img/planet.webp"
