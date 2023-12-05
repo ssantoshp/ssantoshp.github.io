@@ -46,3 +46,28 @@
     grid-area: work;
     border: 1px solid black;
     }
+
+@media (max-width: 700px) {
+      .container {
+        grid-template-areas:
+          'header header header'
+          'desc desc desc'
+          'about about about'
+          'school school school'
+          'work work work';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        width: 90vw;
+       }
+  
+      .desc {
+        border: 1px solid black;
+        border-top: none;
+        padding: 2em;
+        }
+
+      .header {
+          border: 1px solid black;
+          border-bottom: none;
+        }
+  }
