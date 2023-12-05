@@ -12,6 +12,11 @@
   src: url('/font/alliance_2.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Alliance 2 bold';
+  src: url('/font/alliance_2_bold.otf') format('opentype');
+}
+
 :root {
     --background-start-rgb: 60, 235, 172;
     --background-end-rgb: 60, 235, 172;
@@ -29,9 +34,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Alliance 1';
+  font-family: 'Alliance 2 bold';
   font-size: medium;
-  font-weight: bolder;
 }
 
 h1{

@@ -12,8 +12,7 @@ export default function Grid() {
         </div>
 
         <div className={styles.desc}>
-            <h2>Hi, I'm Santosh.</h2>
-            <p>I'm a software engineer and student based in Montreal, Canada.</p>
+            <p>Quick description... + Socials</p>
         </div>
 
         <div className={styles.about}>
@@ -28,7 +27,7 @@ export default function Grid() {
 
         <div className={styles.work}>
             <h3>Work</h3>
-            <p>Working as a Software Engineer at Stathera, focusing on data platform development.</p>
+            <p>Working as a Software Engineer at Stathera, focusing on data platform development. </p>
         </div>
     </div>
   )

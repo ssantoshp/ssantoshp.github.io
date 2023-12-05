@@ -8,9 +8,9 @@
     grid-template-rows: auto 1fr auto;
     background-color: white;
     border: 3px solid black;
-    width: 60vw;
-    margin: 0 auto;
-    height: auto;
+    width: 75vw;
+    margin-top: 3em;
+    margin-bottom: 3rem;
     z-index: 1;
   }
   
@@ -36,11 +36,7 @@
     border: 1px solid black;
   }
 
-.desc {
-    grid-area: desc;
-    border: 1px solid black;
-  }
-  
+
 .school {
     grid-area: school;
     border: 1px solid black;
