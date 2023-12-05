@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Alliance 1';
+  src: url('/font/alliance_1.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Alliance 2';
+  src: url('/font/alliance_2.otf') format('opentype');
+}
+
+:root {
+    --background-start-rgb: 60, 235, 172;
+    --background-end-rgb: 60, 235, 172;
+  }
+
+
+body {
+  color: black;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alliance 1';
+  font-size: medium;
+  font-weight: bolder;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.75rem;
+}
+
+p{
+  font-family: 'Alliance 1';
+  font-weight: medium;
+  font-size: 1rem;
+}
+

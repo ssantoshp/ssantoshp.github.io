@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      'header desc desc'
+      'about about school'
+      'about about work';
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    background-color: white;
+    border: 3px solid black;
+    width: 60vw;
+    margin: 0 auto;
+    height: auto;
+    z-index: 1;
+  }
+  
+.header, .about, .school, .work, .desc {
+    padding: 2em;
+    background-color: white;
+  }
+
+.desc {
+  grid-area: desc;
+  border: 1px solid black;
+  border-left: none;
+  }
+
+.header {
+    grid-area: header;
+    border: 1px solid black;
+    border-right: none;
+  }
+
+.about {
+    grid-area: about;
+    border: 1px solid black;
+  }
+
+.desc {
+    grid-area: desc;
+    border: 1px solid black;
+  }
+  
+.school {
+    grid-area: school;
+    border: 1px solid black;
+  }
+
+.work {
+    grid-area: work;
+    border: 1px solid black;
+    }
