@@ -1,5 +1,4 @@
 import styles from './grid.module.css';
-import Spline from '@splinetool/react-spline';
 import { Icon } from '@iconify/react';
 
 const santosh = ['Santosh', '桑托什', 'サントシュ', '산토시', 'Сантош', 'संतोष', 'سانتوش', 'סנטוש', 'சந்தோஷ்'];
@@ -14,24 +13,24 @@ export default function Grid() {
         </div>
 
         <div className={styles.desc}>
-            <p>Quick description... + Socials</p>
+            <p>Moving fast and breaking things.</p>
         </div>
 
         <div className={styles.about}>
-            <h2>About</h2>
+            <h2>Projects</h2>
             <p>Writing...</p>
-            <Icon icon="octicon:download-16" />
         </div>
 
         <div className={styles.school}>
             <h3>School</h3>
-            <p>U1 Math + CS at McGill University.</p>
+            <p>U1 Math + Computer Science at <span>McGill University</span>, with an expected graduation date of <span>May 2025</span>.</p>
         </div>
 
         <div className={styles.work}>
             <h3>Work</h3>
-            <p>Working as a Software Engineer at Stathera, focusing on data platform development. </p>
-            <a>Download Resume</a>
+            <p>Software Engineer Intern (Part-time) at <span>Stathera</span>, focusing on data platform development. </p>
+            <br />
+            <a>Download Resume <Icon icon="octicon:download-16" /></a>
         </div>
     </div>
   )

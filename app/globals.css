@@ -17,9 +17,16 @@
   src: url('/font/alliance_2_bold.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Alliance 2 semibold';
+  src: url('/font/alliance_2_semibold.otf') format('opentype');
+}
+
+
 :root {
     --background-start-rgb: 60, 235, 172;
     --background-end-rgb: 60, 235, 172;
+    scroll-behavior: smooth;
   }
 
 
@@ -40,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-size: 2.5rem;
+  line-height: 3rem;
 }
 
 h2{
@@ -56,9 +64,24 @@ p{
   font-size: 1rem;
 }
 
+span{
+  font-family: 'Alliance 2 semibold';
+  font-size: 1rem;
+}
+
 a {
   font-family: 'Alliance 1';
   font-weight: bolder;
   font-size: 1rem;
   color: #1C1CFF;
+  text-decoration: none;
+  background: linear-gradient(0deg, #1C1CFF, #1C1CFF) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  padding-bottom: 3px;
+  --bg-h: 2.5px; 
+}
+
+a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
