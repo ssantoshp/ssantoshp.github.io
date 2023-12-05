@@ -70,3 +70,21 @@
           border-bottom: none;
         }
   }
+
+
+.download {
+    font-family: 'Alliance 1';
+    display: flex;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #1C1CFF;
+    text-decoration: none;
+    background: linear-gradient(0deg, #1C1CFF, #1C1CFF) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 2.5px; 
+  }
+  
+.download:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }

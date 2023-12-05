@@ -30,7 +30,7 @@ export default function Grid() {
             <h3>Work</h3>
             <p>Software Engineer Intern (Part-time) at <span>Stathera</span>, focusing on data platform development. </p>
             <br />
-            <a>Download Resume <Icon icon="octicon:download-16" /></a>
+            <a className={styles.download}><Icon icon="octicon:download-16" /> Download Resume</a>
         </div>
     </div>
   )
