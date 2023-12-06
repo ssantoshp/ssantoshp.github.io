@@ -46,7 +46,7 @@
     border: 1px solid black;
     }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
       .container {
         grid-template-areas:
           'header header header'
@@ -73,18 +73,55 @@
 
 
 .download {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      'myIconifyStyles text'; 
+    grid-gap: 5px; 
+    align-items: center;
     font-family: 'Alliance 1';
-    display: flex;
     font-weight: bolder;
     font-size: 1rem;
     color: #1C1CFF;
     text-decoration: none;
     background: linear-gradient(0deg, #1C1CFF, #1C1CFF) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
+    padding-bottom: 2.5px;
     --bg-h: 2.5px; 
   }
-  
+
+
+.myIconifyStyles{
+  grid-area: myIconifyStyles;
+  margin-top: 2px;
+}
+
+.text {
+  grid-area: text;
+  overflow-x: hidden;
+  white-space: nowrap;
+  display: inline; 
+}
+
+
 .download:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
   }
+
+
+.socials{
+  display: flex;
+  justify-content: start;
+  margin-top: 1em;
+}
+
+
+.socials .socialItem{
+  margin: 0 0.75em;
+  font-size: x-large;
+}
+
+.socials .socialItem:first-child {
+  margin-left: 0;
+}
