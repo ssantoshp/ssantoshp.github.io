@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Santosh Passoubady',
@@ -13,8 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    {children}
+      <Script 
+        src="https://code.iconify.design/3/3.1.0/iconify.min.js"
+        strategy="beforeInteractive"
+      />
+      {children}
     </html>
   )
 }
