@@ -3,7 +3,8 @@
     grid-template-areas:
       'header empty desc'
       'about about school'
-      'about about work';
+      'about about work'
+      'about about faq';
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     background-color: white;
@@ -16,6 +17,13 @@
 .header, .about, .school, .work, .desc {
     padding: 2em;
     background-color: white;
+  }
+
+
+.faq {
+    grid-area: faq;
+    border: 1px solid black;
+    padding: 2em;
   }
 
 .empty{
@@ -58,9 +66,10 @@
         grid-template-areas:
           'header header header'
           'desc desc desc'
-          'about about about'
           'school school school'
-          'work work work';
+          'work work work'
+          'about about about'
+          'faq faq faq';
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
         width: 90vw;
@@ -70,12 +79,17 @@
         border: 1px solid black;
         border-top: none;
         padding: 2em;
+        margin-top: -2em;
         }
 
       .header {
           border: 1px solid black;
           border-bottom: none;
         }
+      
+      .empty{
+        display: none;
+      }
       
   }
 
@@ -120,7 +134,7 @@
 
 .socials{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin-top: 1em;
 }
 

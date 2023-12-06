@@ -13,7 +13,8 @@
     "cross-fetch": "^4.0.0",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-random-reveal": "^2.0.0"
   },
   "devDependencies": {
     "@iconify/icons-octicon": "^1.2.46",

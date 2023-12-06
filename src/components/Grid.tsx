@@ -1,18 +1,18 @@
 import styles from './grid.module.css';
 import Link from 'next/link';
+import { useRandomReveal } from 'react-random-reveal'
 
-const santosh = ['Santosh', '桑托什', 'サントシュ', '산토시', 'Сантош', 'संतोष', 'سانتوش', 'סנטוש', 'சந்தோஷ்'];
+const santoshVariations = ['Santosh', '桑托什', 'サントシュ', '산토시', 'Сантош', 'संतोष', 'سانتوش', 'סנטוש', 'சந்தோஷ்'];
 
 export default function Grid() {
+
   return (
-
     <>
-
     <div className={styles.container}> 
 
         <div className={styles.header}>
             <h1>Santosh Passoubady</h1>
-            <a>Santosh</a>
+            <a>@ssantoshp</a>
         </div>
 
         <div className={styles.empty}></div>
@@ -38,6 +38,10 @@ export default function Grid() {
                 <Link href="https://twitter.com/_santoshp_" rel="noopener noreferrer" style={{ color: "inherit"}} target="_blank">
                     <span className={`iconify ${styles.socialItem}`} data-icon="bi:twitter-x"></span>
                 </Link>
+
+                <Link href="https://santoshpassoubady.medium.com/" rel="noopener noreferrer" style={{ color: "inherit"}} target="_blank">
+                   <span className={`iconify ${styles.socialItem}`} data-icon="bi:medium"></span>
+                </Link>
                 
                 <Link href="mailto:santoshpassoubady@gmail.com" rel="noopener noreferrer" style={{ color: "inherit"}} target="_blank">
                    <span className={`iconify ${styles.socialItem}`} data-icon="ion:mail-sharp"></span>
@@ -48,7 +52,7 @@ export default function Grid() {
 
         <div className={styles.about}>
             <h2>Projects</h2>
-            <p>Writing...</p>
+            <p>Here are some of the projects I've worked on.</p>
         </div>
 
         <div className={styles.school}>
@@ -64,6 +68,12 @@ export default function Grid() {
             <span className={`iconify ${styles.myIconifyStyles}`} data-icon="octicon:download-16"></span> 
             Download Resume
             </a>
+        </div>
+
+        <div className={styles.faq}>
+            <h2>FAQ</h2>
+            <b>Where are you located?</b>
+            <p>Montreal, QC, Canada</p>
         </div>
     </div>
     </>
