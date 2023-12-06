@@ -15,6 +15,8 @@ export default function Grid() {
             <a>Santosh</a>
         </div>
 
+        <div className={styles.empty}></div>
+
         <div className={styles.desc}>
             <p>Moving fast and breaking things.</p>
             <div className={styles.socials}>
