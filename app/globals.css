@@ -27,11 +27,13 @@
     --background-start-rgb: 60, 235, 172;
     --background-end-rgb: 60, 235, 172;
     scroll-behavior: smooth;
+    overflow-y: scroll;
   }
 
 
 body {
   color: black;
+  margin-bottom: 3em;
   background: linear-gradient(
       to bottom,
       transparent,

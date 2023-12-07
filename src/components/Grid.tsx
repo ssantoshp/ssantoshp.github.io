@@ -1,10 +1,37 @@
+'use client'
 import styles from './grid.module.css';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from "react";
 import { useRandomReveal } from 'react-random-reveal'
 
-const santoshVariations = ['Santosh', '桑托什', 'サントシュ', '산토시', 'Сантош', 'संतोष', 'سانتوش', 'סנטוש', 'சந்தோஷ்'];
+const santoshVariations = ['Santosh', 'சந்தோஷ்', '桑托什', 'سانتوش', 'サントシュ', 'Сантош', 'संतोष', '산토시', 'סנטוש'];
 
 export default function Grid() {
+
+    const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+      setIsClient(true);
+
+      const intervalId = setInterval(() => {
+        setCurrentVariationIndex(prevIndex => (prevIndex + 1) % santoshVariations.length);
+      }, 3500); 
+
+      return () => clearInterval(intervalId);
+    }, []);
+
+    const AddSuspenseComponent = () => {
+        const characters = useRandomReveal({
+          isPlaying: true,
+          duration: 0.5,
+          characters: santoshVariations[currentVariationIndex],
+          updateInterval: 0.065,
+          characterSet: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '#', '@', '&', '%', '$', '!', '?', '{', '}', '[', ']', '(', ')', '<', '>', '/', '\\', '|', '-', '_', '+', '=', '*', '~']
+        });
+      
+        return characters;
+    };
 
   return (
     <>
@@ -12,7 +39,12 @@ export default function Grid() {
 
         <div className={styles.header}>
             <h1>Santosh Passoubady</h1>
-            <a>@ssantoshp</a>
+            <a>{isClient ? (
+                 <AddSuspenseComponent />
+              ) : (
+                "???????"
+              )}
+              </a>
         </div>
 
         <div className={styles.empty}></div>
@@ -53,6 +85,18 @@ export default function Grid() {
         <div className={styles.about}>
             <h2>Projects</h2>
             <p>Here are some of the projects I've worked on.</p>
+            <br />
+            <p> Writing...</p>
+
+            {/*
+            <h4>Mirror</h4>
+            <h4>ByteDetective</h4>
+            <h4>Inhouse</h4>
+            <h4>Empyrial</h4>
+            <h4>Cloudnerd</h4>
+            <h4>Alexandr</h4>
+             */}
+
         </div>
 
         <div className={styles.school}>

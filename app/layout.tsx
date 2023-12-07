@@ -13,12 +13,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <>
+    <html>
       <Script 
         src="https://code.iconify.design/3/3.1.0/iconify.min.js"
-        strategy="beforeInteractive"
       />
-      {children}
+      <body>{children}</body>
     </html>
+    </>
   )
 }
