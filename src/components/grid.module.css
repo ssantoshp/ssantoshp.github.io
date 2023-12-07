@@ -61,7 +61,7 @@
     border: 1px solid black;
     }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
       .container {
         grid-template-areas:
           'header header header'
