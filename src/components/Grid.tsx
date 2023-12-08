@@ -1,6 +1,7 @@
 'use client'
 import styles from './grid.module.css';
 import Link from 'next/link';
+import Project from './Project';
 import { useEffect, useRef, useState } from "react";
 import { useRandomReveal } from 'react-random-reveal'
 
@@ -86,14 +87,57 @@ export default function Grid() {
             <h2>Projects</h2>
             <p>Here are some of the projects I've worked on.</p>
             <br />
-            <p> Writing...</p>
+
+            <Project 
+            title="Mirror" 
+            date="November 2023"
+            shortDescription='A virtual clothing try-on webapp.'
+            description="with Mooez Muhammad, Roko Baljak and Louis Wei" 
+            link="https://github.com/ssantoshp/mirror"
+            imageUrl='/img/mirror.png'
+            />
+
+            <Project
+            title="ByteDetective"
+            date="July 2023"
+            shortDescription='A semantic search engine for your photos.'
+            description=""
+            link="https://github.com/ssantoshp/bytedetective"
+            imageUrl='/img/bytedetective.png'
+            />
+
+            <Project
+            title="Inhouse"
+            date="June 2023"
+            shortDescription='GPT, but synced with your Google Drive.'
+            description="with Tianyi Xu"
+            link="https://github.com/ssantoshp/inhouse"
+            imageUrl='/img/inhouse.png'
+            />
+
+            <Project
+            title="Alexandr"
+            date="January 2022"
+            shortDescription='Grammarly, but for french.'
+            description=""
+            link="https://github.com/ssantoshp/alexandr"
+            imageUrl='/img/alexandr.png'
+            />
+
+            <Project
+            title="Empyrial"
+            date="May 2021"
+            shortDescription='A simple and powerful portfolio backtesting engine.'
+            description=""
+            link="https://github.com/ssantoshp/empyrial"
+            imageUrl='/img/empyrial.png'
+            />
 
             {/*
             <h4>Mirror</h4>
             <h4>ByteDetective</h4>
             <h4>Inhouse</h4>
             <h4>Empyrial</h4>
-            <h4>Cloudnerd</h4>
             <h4>Alexandr</h4>
              */}
 
@@ -102,12 +146,21 @@ export default function Grid() {
         <div className={styles.school}>
             <h3>School</h3>
             <p>U1 Math + Computer Science at <span>McGill University</span>, with an expected graduation date of <span>May 2025</span>.</p>
+
+            <br />
+            <p>President of <span>McGill's Poker Club</span></p>
         </div>
 
         <div className={styles.work}>
             <h3>Work</h3>
-            <p>Software Engineer Intern (Part-time) at <span>Stathera</span>, focusing on data platform development. </p>
+            <span>August 2023 - Present</span>
+            <p>Software Engineer Intern at <span>Stathera</span>, focusing on data platform development. </p>
             <br />
+
+            <p>Looking for a <span>Summer 2024</span> internship.</p>
+
+            <br />
+
             <a className={styles.download} href="/file/Resume.pdf" download> 
             <span className={`iconify ${styles.myIconifyStyles}`} data-icon="octicon:download-16"></span> 
             Download Resume
@@ -115,9 +168,39 @@ export default function Grid() {
         </div>
 
         <div className={styles.faq}>
-            <h2>FAQ</h2>
+            <h3>FAQ</h3>
+
             <b>Where are you located?</b>
-            <p>Montreal, QC, Canada</p>
+            <p>Montreal, QC, Canada.</p>
+
+            <br />
+
+            <b>Why do you code?</b>
+            <p>Because it feels like magic (when it works).</p>
+
+            <br />
+
+            <b>Which technology do you advocate most?</b>
+            <p>Svelte ❤️</p>
+
+            <br />
+
+            <b>What are you currently learning?</b>
+            <p>I am learning about distributed systems, and how to build them.</p>
+
+            <br />
+
+            <b>Who are your tech role models?</b>
+            <p>- George Hotz</p>
+            <p>- Palmer Luckey</p>
+            <p>- Lucy Guo</p>
+
+            <br />
+
+            <b>What important truth do very few people agree with you on?</b>
+            <p>Don't follow your passion. Instead, find something you're good at, and then become passionate about it.</p>
+
+
         </div>
     </div>
     </>
