@@ -153,7 +153,7 @@ export default function Grid() {
 
         <div className={styles.work}>
             <h3>Work</h3>
-            <span>August 2023 - Present</span>
+            <span>May 2023 - Present</span>
             <p>Software Engineer Intern at <span>Stathera</span>, focusing on data platform development. </p>
             <br />
 
