@@ -92,7 +92,7 @@ export default function Grid() {
             title="Mirror" 
             date="November 2023"
             shortDescription='A virtual clothing try-on webapp.'
-            description="with Mooez Muhammad, Roko Baljak and Louis Wei" 
+            description="with Moeez Muhammad, Roko Baljak and Louis Wei" 
             link="https://github.com/ssantoshp/mirror"
             imageUrl='/img/mirror.png'
             />
